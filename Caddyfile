@@ -1,0 +1,17 @@
+# Configuração HTTP para a rede interna.
+# O acesso deve ser feito por http://chamados.exemplo.local.
+
+http://chamados.exemplo.local {
+
+    @api path /api /api/*
+    handle @api {
+        uri strip_prefix /api
+        reverse_proxy 127.0.0.1:8000
+    }
+
+    handle {
+        root * /opt/sistema-chamados/frontend/dist
+        try_files {path} /index.html
+        file_server
+    }
+}
