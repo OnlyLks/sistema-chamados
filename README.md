@@ -93,7 +93,7 @@ sudo mkdir -p /opt/sistema-chamados
 sudo chown chamados:chamados /opt/sistema-chamados
 
 sudo -u chamados git clone \
-  https://github.com/OnlyLks/sistema-chamados-interno.git \
+  https://github.com/OnlyLks/sistema-chamados.git \
   /opt/sistema-chamados
 ```
 
