@@ -139,7 +139,6 @@ DB_PASSWORD=SUBSTITUA_POR_UMA_SENHA_FORTE
 JWT_SECRET=SUBSTITUA_POR_UMA_CHAVE_ALEATORIA_DE_NO_MINIMO_64_CARACTERES
 JWT_SECRET_PREVIOUS=
 ACCESS_TOKEN_EXPIRE_MINUTES=480
-
 CORS_ORIGINS=http://chamados.exemplo.local
 TRUSTED_HOSTS=chamados.exemplo.local,localhost,127.0.0.1
 ```
@@ -156,7 +155,7 @@ sudo chmod 600 .env
 Crie o banco e todas as tabelas:
 
 ```bash
-sudo mysql < /opt/sistema-chamados/database/scriptDB.sql
+sudo mysql < /opt/sistema-chamados/scriptDB.sql
 ```
 
 Crie um usuário exclusivo para a aplicação:
